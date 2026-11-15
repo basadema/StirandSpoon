@@ -232,9 +232,9 @@ h4 {
   font-family: var(--font-heading);
   font-size: var(--fs-xs);
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-pink);
+  color: var(--color-text-dark);
   background-color: var(--color-white);
   padding: 0.45rem 1.15rem;
   border-radius: var(--radius-pill);

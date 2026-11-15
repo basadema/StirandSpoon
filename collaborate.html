@@ -80,9 +80,24 @@
       <div class="blob blob-deep hero-blob-2" aria-hidden="true"></div>
 
       <div class="container collab-hero-inner reveal">
-        <span class="section-eyebrow" data-i18n="collaborate.eyebrow">
-          Partnerships &amp; Collaborations
-        </span>
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          <span data-i18n="collaborate.eyebrow">PARTNERSHIPS &amp; COLLABORATIONS</span>
+        </div>
+
+        <div class="hero-logo-wrap" style="display: flex; justify-content: center;">
+          <div class="brand-logo brand-logo--hero">
+            <img
+              src="assets/logo-hero.svg"
+              alt="Stir and Spoon®"
+              class="brand-logo-img"
+              data-logo-img
+            />
+            <span class="brand-wordmark-fallback" style="display: none;">
+              STIR AND SPOON<sup>®</sup>
+            </span>
+          </div>
+        </div>
 
         <h1 class="collab-hero-title" data-i18n="collaborate.title">
           Let’s create something great together.
@@ -302,6 +317,10 @@
           </p>
           <div class="footer-links-stack">
             <a href="index.html" class="footer-email-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
               <span data-i18n="nav.home">Home</span>
             </a>
             <a href="mailto:hello@stirandspoon.com" class="footer-email-pill" id="footer-email-link">
@@ -371,3 +390,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+

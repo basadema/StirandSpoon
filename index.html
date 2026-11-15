@@ -3,91 +3,437 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stir and Spoon | Vlijmscherp gemak voor elke keuken — Officiële Merkpagina</title>
-  <meta name="description" content="Stir and Spoon — Wij leggen momenteel de laatste hand aan onze officiële merkpagina. Duurzaam, ergonomisch keukengerei voor jarenlang kookplezier." />
+
+  <!-- SEO Meta Tags -->
+  <title>Stir &amp; Spoon® | Zeg hallo tegen iets nieuws!</title>
+  <meta
+    name="description"
+    content="Stir &amp; Spoon® — Moderne, strakke keukenapparaten voor alle soorten keukens. Zeg hallo tegen iets nieuws! Ontdek ons assortiment op Bol.com."
+  />
+
+  <!-- Open Graph / Social Sharing Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stir &amp; Spoon®" />
+  <meta property="og:title" content="Stir &amp; Spoon® | Zeg hallo tegen iets nieuws!" />
+  <meta
+    property="og:description"
+    content="Moderne, strakke keukenapparaten voor alle soorten keukens. Zeg hallo tegen iets nieuws!"
+  />
+  <meta property="og:image" content="assets/photos/foto-1.jpg" />
+
+  <!-- Google Fonts: Outfit (Geometric Headings & Wordmark) + DM Sans (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="page-wrapper">
-    <!-- 1. Minimalistische Header -->
-    <header class="site-header" id="site-header">
-      <div class="container header-inner">
-        <a href="/" class="brand-logo" aria-label="Stir and Spoon Home">
-          <span class="brand-logo-mark" aria-hidden="true">
-            <svg width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Buitenste fijne RVS-cirkel & spiraal-stir beweging -->
-              <circle cx="22" cy="22" r="20.5" stroke="#111111" stroke-width="1.8"/>
-              <path d="M12.5 22C12.5 16.7533 16.7533 12.5 22 12.5C26.1421 12.5 29.5 15.8579 29.5 20C29.5 23.3137 26.8137 26 23.5 26C20.9 26 19 24.1 19 21.6" stroke="#111111" stroke-width="1.8" stroke-linecap="round"/>
-              <!-- Gestileerde lepel (Spoon) met steel door het midden -->
-              <ellipse cx="22" cy="14.2" rx="3.4" ry="4.6" fill="#111111"/>
-              <path d="M22 18.5V34" stroke="#111111" stroke-width="2.2" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <span class="brand-logo-text">
-            <span class="brand-wordmark">STIR AND SPOON</span>
-            <span class="brand-subline">Kitchen Essentials</span>
-          </span>
-        </a>
+  <!-- ========================================================================
+       1. HEADER COMPONENT (Shared across all pages)
+       - Place your logo file at: /assets/logo.svg
+       - To enable the top navigation menu later, add class `has-nav` to <header>
+       ======================================================================== -->
+  <header class="site-header" id="top">
+    <div class="header-bar">
+      <!-- Brand Logo (Left) -->
+      <a href="index.html" class="brand-logo" aria-label="Stir &amp; Spoon® Home">
+        <!-- LOGO PLACEHOLDER: Drop your logo at /assets/logo.svg -->
+        <img
+          src="assets/logo.svg"
+          alt="Stir &amp; Spoon®"
+          class="brand-logo-img"
+          data-logo-img
+          style="display: none;"
+        />
+        <span class="brand-wordmark-fallback">
+          STIR &amp; SPOON<sup>®</sup>
+        </span>
+      </a>
+
+      <!-- Hidden-for-now Navigation (Ready to grow: add `.has-nav` to `.site-header`) -->
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <a href="#manifesto" class="nav-link" data-i18n="nav.manifesto">Ons verhaal</a>
+        <a href="#sfeer" class="nav-link" data-i18n="nav.mood">Sfeer</a>
+        <a href="#assortiment" class="nav-link" data-i18n="nav.range">Assortiment</a>
+      </nav>
+
+      <!-- Language Switch & Optional Mobile Burger (Right) -->
+      <div class="header-actions">
+        <div
+          class="lang-switch"
+          role="group"
+          aria-label="Kies taal"
+          data-i18n-aria="nav.langSwitchLabel"
+        >
+          <button
+            type="button"
+            class="lang-btn is-active"
+            data-lang-btn="nl"
+            aria-pressed="true"
+          >
+            NL
+          </button>
+          <button
+            type="button"
+            class="lang-btn"
+            data-lang-btn="en"
+            aria-pressed="false"
+          >
+            EN
+          </button>
+        </div>
+
+        <!-- Mobile Burger Button (Hidden until `.has-nav` is added on `.site-header`) -->
+        <button
+          type="button"
+          class="nav-burger"
+          id="nav-burger"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menu openen of sluiten"
+          data-i18n-aria="nav.menuToggleLabel"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- 2. Hero-sectie (Centraal op het scherm) -->
-    <main class="hero-main">
-      <section class="hero-section" aria-labelledby="hero-heading">
-        <div class="container hero-container">
-          <div class="hero-card">
-            <div class="status-badge">
-              <span class="status-dot" aria-hidden="true"></span>
-              BINNENKORT ONLINE
-            </div>
+  <main>
+    <!-- ======================================================================
+         2. HERO SECTION COMPONENT
+         - Large logo, NL/EN slogan, supporting copy & Bol.com pill button
+         - Hero photo uses /assets/photos/foto-1.jpg (soft placeholder until added)
+         ====================================================================== -->
+    <section class="section hero-section" id="hero">
+      <!-- Soft organic pastel blue background blobs -->
+      <div class="blob blob-light hero-blob-1" aria-hidden="true"></div>
+      <div class="blob blob-deep hero-blob-2" aria-hidden="true"></div>
 
-            <h1 class="hero-title" id="hero-heading">
-              Vlijmscherp gemak voor elke keuken.
-            </h1>
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Moderne keukenapparaten</span>
+          </div>
 
-            <div class="steel-divider" aria-hidden="true"></div>
-
-            <p class="hero-subtitle">
-              Wij leggen momenteel de laatste hand aan onze officiële merkpagina. Bij Stir and Spoon ontwerpen wij duurzaam, ergonomisch keukengerei voor jarenlang kookplezier.
-            </p>
-
-            <div class="hero-action">
-              <a
-                href="https://www.bol.com/nl/nl/s/?searchtext=Stir+and+Spoon"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn-primary"
-              >
-                <span>Bezoek onze winkel op Bol.com</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M7 17 17 7"/>
-                  <path d="M7 7h10v10"/>
-                </svg>
-              </a>
+          <div class="hero-logo-wrap">
+            <div class="brand-logo brand-logo--hero">
+              <!-- LOGO PLACEHOLDER: Drop your logo at /assets/logo.svg -->
+              <img
+                src="assets/logo.svg"
+                alt="Stir &amp; Spoon®"
+                class="brand-logo-img"
+                data-logo-img
+                style="display: none;"
+              />
+              <span class="brand-wordmark-fallback">
+                STIR &amp; SPOON<sup>®</sup>
+              </span>
             </div>
           </div>
+
+          <h1 class="hero-title" data-i18n="hero.slogan">
+            Zeg hallo tegen iets nieuws!
+          </h1>
+
+          <p class="hero-supporting" data-i18n="hero.supporting">
+            Eigentijdse, strakke aanrechtapparaten ontworpen voor elke keuken. Van snelle doordeweekse ontbijtjes tot lange avonden aan tafel.
+          </p>
+
+          <!-- BOL.COM CTA LINK: Edit `SITE_CONFIG.bolUrl` in translations.js -->
+          <a
+            href="https://www.bol.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-bol-link
+          >
+            <span data-i18n="hero.cta">Shop op Bol.com</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </a>
         </div>
-      </section>
-    </main>
 
-    <!-- 3. Strakke Footer onderaan -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span class="footer-brand">Stir and Spoon</span>
-        <span class="footer-separator" aria-hidden="true"></span>
-        <a href="mailto:service@stirandspoon.nl?subject=Vraag%20of%20Garantie%20-%20Stir%20and%20Spoon" class="footer-email">
-          Klantenservice &amp; garantie: service@stirandspoon.nl
-        </a>
-        <span class="footer-separator" aria-hidden="true"></span>
-        <span class="footer-copy">&copy; 2026 Stir and Spoon. Alle rechten voorbehouden.</span>
+        <!-- Hero Rounded Photo Visual -->
+        <div class="hero-visual reveal">
+          <figure class="photo-frame hero-photo-frame">
+            <!-- PHOTO PLACEHOLDER: Add /assets/photos/foto-1.jpg -->
+            <img
+              id="hero-photo-img"
+              src="assets/photos/foto-1.jpg"
+              alt="Lichte marmeren keuken met kleurrijk vers fruit, noten en moderne Stir &amp; Spoon keukenapparatuur"
+              data-i18n-alt="hero.heroPhotoAlt"
+            />
+          </figure>
+          <div class="hero-floating-pill">
+            <span class="hero-floating-pill-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.visualCaption">Fris design voor op elk aanrecht</span>
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script src="app.js"></script>
+    <!-- Soft Organic Wave Curve Transition -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
+        <path
+          d="M0,32 C320,88 640,-16 960,36 C1200,74 1340,48 1440,24 L1440,80 L0,80 Z"
+          fill="#EAF4F3"
+          opacity="0.7"
+        />
+      </svg>
+    </div>
+
+    <!-- ======================================================================
+         3. MANIFESTO SECTION COMPONENT
+         - Elegant white rounded card (.card) on pastel blue backdrop
+         ====================================================================== -->
+    <section class="section manifesto-section" id="manifesto">
+      <div class="blob blob-white manifesto-blob" aria-hidden="true"></div>
+
+      <div class="container">
+        <article class="card manifesto-card reveal">
+          <span class="section-eyebrow" data-i18n="manifesto.eyebrow">Ons Manifesto</span>
+          <h2 class="section-title" data-i18n="manifesto.title">Onze wereld draait om keukens</h2>
+
+          <div class="manifesto-body">
+            <p class="manifesto-lead" data-i18n="manifesto.p1">
+              Bij Stir &amp; Spoon draait onze wereld om keukens. Dat zijn de plekken die wij het beste kennen.
+            </p>
+            <p data-i18n="manifesto.p2">
+              Grote keukens, kleine keukens. Keukens ter grootte van een appartement. Keukens met planten op de vensterbank of kleurrijke fruitkunst aan de muur. Keukens met kinderen die hun ogen op een gebakje hebben gericht, opa's en oma's die een stamppot opscheppen, en iedereen daartussenin. De keuken is een knooppunt van bedrijvigheid. Een plek voor gelach, verbinding, gezelligheid en goed eten.
+            </p>
+            <p data-i18n="manifesto.p3">
+              Wij brengen moderne, strakke keukenapparaten naar jouw huis. Daarom maken we eigentijdse keukenapparaten voor alle soorten keukens, in elke uithoek van de wereld.
+            </p>
+            <p data-i18n="manifesto.p4">
+              We helpen je het beste uit je keuken te halen, met innovatieve en moderne aanrechtapparaten. We volgen zorgvuldige principes van ontwerp en functionaliteit, zodat je een goed gevoel hebt bij wat je gebruikt om eten te bereiden.
+            </p>
+            <p class="manifesto-closing" data-i18n="manifesto.p5">
+              Welke keuken je ook hebt, wij hebben een apparaat dat zich er thuis voelt. Met Stir &amp; Spoon zeg je hallo tegen iets nieuws.
+            </p>
+          </div>
+
+          <div class="soft-capsule-divider" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. MOOD IMPRESSION (SFEERIMPRESSIE) SECTION COMPONENT
+         - Data-driven photo grid rendered from `moodPhotos` in translations.js
+         - Place photos at: /assets/photos/foto-1.jpg through /assets/photos/foto-6.jpg
+         ====================================================================== -->
+    <section class="section mood-section" id="sfeer">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="mood.eyebrow">Sfeerimpressie</span>
+          <h2 class="section-title" data-i18n="mood.title">Sfeer in de keuken</h2>
+          <p class="section-subtitle" data-i18n="mood.subtitle">
+            Helder wit marmer, kleurrijk vers fruit, noten en handen die met plezier aan het werk zijn — een blik in de wereld van Stir &amp; Spoon.
+          </p>
+        </div>
+
+        <!-- Populated automatically by script.js using `moodPhotos` in translations.js -->
+        <div class="mood-grid" id="mood-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. FUTURE SECTION TEMPLATE: ONS ASSORTIMENT / OUR RANGE (Commented out)
+         - Uncomment this <section> block when you are ready to showcase
+           individual kitchen appliances on the page.
+         ====================================================================== -->
+    <!--
+    <section class="section range-section" id="assortiment">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="range.eyebrow">Collectie</span>
+          <h2 class="section-title" data-i18n="range.title">Ons assortiment</h2>
+          <p class="section-subtitle" data-i18n="range.subtitle">
+            Moderne aanrechtapparaten met een zacht, tijdloos design.
+          </p>
+        </div>
+
+        <div class="range-grid">
+          <article class="card card-interactive product-card reveal">
+            <div class="photo-frame">
+              <img src="assets/photos/product-1.jpg" alt="Stir &amp; Spoon Product 1" loading="lazy" />
+            </div>
+            <h3 class="product-card-title" data-i18n="range.product1Name">Stir &amp; Spoon Keukenapparaat 01</h3>
+            <p class="product-card-text" data-i18n="range.product1Text">Compact, krachtig en stil op elk aanrecht.</p>
+            <a href="https://www.bol.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
+              <span data-i18n="range.cta">Shop op Bol.com</span>
+            </a>
+          </article>
+
+          <article class="card card-interactive product-card reveal">
+            <div class="photo-frame">
+              <img src="assets/photos/product-2.jpg" alt="Stir &amp; Spoon Product 2" loading="lazy" />
+            </div>
+            <h3 class="product-card-title" data-i18n="range.product2Name">Stir &amp; Spoon Keukenapparaat 02</h3>
+            <p class="product-card-text" data-i18n="range.product2Text">Ontworpen voor dagelijks gemak en verse ingrediënten.</p>
+            <a href="https://www.bol.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
+              <span data-i18n="range.cta">Shop op Bol.com</span>
+            </a>
+          </article>
+
+          <article class="card card-interactive product-card reveal">
+            <div class="photo-frame">
+              <img src="assets/photos/product-3.jpg" alt="Stir &amp; Spoon Product 3" loading="lazy" />
+            </div>
+            <h3 class="product-card-title" data-i18n="range.product3Name">Stir &amp; Spoon Keukenapparaat 03</h3>
+            <p class="product-card-text" data-i18n="range.product3Text">Strakke vormgeving die past in elke moderne keuken.</p>
+            <a href="https://www.bol.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
+              <span data-i18n="range.cta">Shop op Bol.com</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ======================================================================
+         6. CALL-TO-ACTION (CTA) BAND SECTION COMPONENT
+         ====================================================================== -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <span class="section-eyebrow" data-i18n="cta.eyebrow">Stir &amp; Spoon® op Bol.com</span>
+          <h2 class="cta-title" data-i18n="cta.title">Klaar voor iets nieuws?</h2>
+          <p class="cta-slogan font-heading" data-i18n="cta.slogan">Zeg hallo tegen iets nieuws!</p>
+
+          <!-- BOL.COM CTA LINK: Edit `SITE_CONFIG.bolUrl` in translations.js -->
+          <a
+            href="https://www.bol.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-bol-link
+          >
+            <span data-i18n="cta.button">Shop op Bol.com</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       7. FOOTER COMPONENT (Shared across all pages)
+       - Edit contact details & social URLs in `SITE_CONFIG` inside translations.js
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-card">
+      <div class="footer-grid">
+        <!-- Column 1: Logo & Tagline -->
+        <div class="footer-brand-col">
+          <a href="#top" class="brand-logo brand-logo--footer" aria-label="Stir &amp; Spoon®">
+            <!-- LOGO PLACEHOLDER: Drop your logo at /assets/logo.svg -->
+            <img
+              src="assets/logo.svg"
+              alt="Stir &amp; Spoon®"
+              class="brand-logo-img"
+              data-logo-img
+              style="display: none;"
+            />
+            <span class="brand-wordmark-fallback">
+              STIR &amp; SPOON<sup>®</sup>
+            </span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">
+            Moderne, strakke keukenapparaten voor alle soorten keukens.
+          </p>
+        </div>
+
+        <!-- Column 2: Contact Placeholder -->
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.contactTitle">Contact &amp; Service</h3>
+          <p class="footer-contact-text" data-i18n="footer.contactPlaceholder">
+            Vragen of contact? Stuur ons een bericht:
+          </p>
+          <!-- CONTACT PLACEHOLDER: Edit `SITE_CONFIG.contactEmail` in translations.js -->
+          <a href="mailto:hello@stirandspoon.com" class="footer-email-pill" id="footer-email-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="5" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <span id="footer-email-text">hello@stirandspoon.com</span>
+          </a>
+        </div>
+
+        <!-- Column 3: Social Media Icons (Instagram, Pinterest, Facebook) -->
+        <div>
+          <h3 class="footer-heading" data-i18n="footer.socialTitle">Volg Stir &amp; Spoon®</h3>
+          <div class="social-list">
+            <!-- Instagram -->
+            <a
+              href="#"
+              class="social-link"
+              data-social="instagram"
+              aria-label="Stir &amp; Spoon® op Instagram"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="6" ry="6" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+
+            <!-- Pinterest -->
+            <a
+              href="#"
+              class="social-link"
+              data-social="pinterest"
+              aria-label="Stir &amp; Spoon® op Pinterest"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 20l4-9" />
+                <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7" />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="#"
+              class="social-link"
+              data-social="facebook"
+              aria-label="Stir &amp; Spoon® op Facebook"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 Stir &amp; Spoon®. Alle rechten voorbehouden.</span>
+        <span data-i18n="footer.trademark">Stir &amp; Spoon® is een geregistreerd handelsmerk.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Translations & Site Data Config -->
+  <script src="translations.js"></script>
+  <!-- Main Application Script -->
+  <script src="script.js"></script>
 </body>
 </html>

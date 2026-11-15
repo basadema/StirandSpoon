@@ -52,10 +52,10 @@
   --fs-xl: clamp(1.85rem, 3.5vw, 2.65rem);
   --fs-hero: clamp(2.25rem, 5vw, 3.6rem);
 
-  /* Logo Sizing (Easy to adjust when /assets/logo.svg is added) */
-  --logo-height-header: 38px;
-  --logo-height-hero: 64px;
-  --logo-height-footer: 36px;
+  /* Logo Sizing (Official Stir & Spoon® Logo) */
+  --logo-height-header: 42px;
+  --logo-height-hero: 76px;
+  --logo-height-footer: 40px;
 
   /* Spacing Scale */
   --space-xs: 0.5rem;

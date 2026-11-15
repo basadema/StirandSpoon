@@ -110,7 +110,7 @@
     grid.innerHTML = '';
 
     moodPhotos.forEach((photo) => {
-      const altText = (photo.alt && photo.alt[lang]) || photo.alt.nl || 'Stir & Spoon';
+      const altText = (photo.alt && photo.alt[lang]) || photo.alt.nl || 'Stir and Spoon';
       const captionText = (photo.caption && photo.caption[lang]) || photo.caption.nl || '';
 
       const figure = document.createElement('figure');
@@ -139,7 +139,7 @@
   function updateHeroPhoto(lang) {
     const heroImg = document.getElementById('hero-photo-img');
     if (!heroImg) return;
-    const caption = getTranslation(lang, 'hero.visualCaption') || 'Stir & Spoon®';
+    const caption = getTranslation(lang, 'hero.visualCaption') || 'Stir and Spoon®';
     const existingPlaceholder = heroImg.closest('.photo-frame')?.querySelector('.photo-placeholder');
     if (existingPlaceholder) {
       existingPlaceholder.remove();

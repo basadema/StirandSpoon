@@ -1,6 +1,6 @@
-# Stir & Spoon® — Official Brand Landing Page
+# Stir and Spoon® — Official Brand Landing Page
 
-Responsive, mobile-first, bilingual (`NL` | `EN`) landing page for **Stir & Spoon®** — modern, sleek small kitchen appliances. Built with plain HTML, CSS and vanilla JavaScript, designed to grow effortlessly with new sections, pages, and languages.
+Responsive, mobile-first, bilingual (`NL` | `EN`) landing page for **Stir and Spoon®** — modern, sleek small kitchen appliances. Built with plain HTML, CSS and vanilla JavaScript, designed to grow effortlessly with new sections, pages, and languages.
 
 ---
 

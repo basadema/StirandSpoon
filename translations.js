@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * STIR & SPOON® — Translations & Data Configuration (translations.js)
+ * STIR AND SPOON® — Translations & Data Configuration (translations.js)
  * ============================================================================
  * How to edit:
  * 1. Change your Bol.com store URL or contact info in SITE_CONFIG below.
@@ -12,8 +12,8 @@
  */
 
 const SITE_CONFIG = {
-  // Replace with your direct Bol.com seller or brand page URL:
-  bolUrl: 'https://www.bol.com/',
+  // Official Stir and Spoon Bol.com store URL:
+  bolUrl: 'https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/',
   contactEmail: 'hello@stirandspoon.com',
   contactLocation: 'Nederland / The Netherlands',
   socials: {
@@ -26,9 +26,9 @@ const SITE_CONFIG = {
 const translations = {
   nl: {
     meta: {
-      title: 'Stir & Spoon® | Zeg hallo tegen iets nieuws!',
+      title: 'Stir and Spoon® | Zeg hallo tegen iets nieuws!',
       description:
-        'Stir & Spoon® — Moderne, strakke keukenapparaten voor alle soorten keukens. Zeg hallo tegen iets nieuws! Ontdek ons assortiment op Bol.com.'
+        'Stir and Spoon® — Moderne, strakke keukenapparaten voor alle soorten keukens. Zeg hallo tegen iets nieuws! Ontdek ons assortiment op Bol.com.'
     },
     nav: {
       manifesto: 'Ons verhaal',
@@ -47,38 +47,38 @@ const translations = {
       visualTag: 'Voor elke keuken',
       visualCaption: 'Fris design voor op elk aanrecht',
       heroPhotoAlt:
-        'Lichte marmeren keuken met kleurrijk vers fruit, noten en moderne Stir & Spoon keukenapparatuur'
+        'Lichte marmeren keuken met kleurrijk vers fruit, noten en moderne Stir and Spoon keukenapparatuur'
     },
     manifesto: {
       eyebrow: 'Ons Manifesto',
       title: 'Onze wereld draait om keukens',
-      p1: 'Bij Stir & Spoon draait onze wereld om keukens. Dat zijn de plekken die wij het beste kennen.',
+      p1: 'Bij Stir and Spoon draait onze wereld om keukens. Dat zijn de plekken die wij het beste kennen.',
       p2: "Grote keukens, kleine keukens. Keukens ter grootte van een appartement. Keukens met planten op de vensterbank of kleurrijke fruitkunst aan de muur. Keukens met kinderen die hun ogen op een gebakje hebben gericht, opa's en oma's die een stamppot opscheppen, en iedereen daartussenin. De keuken is een knooppunt van bedrijvigheid. Een plek voor gelach, verbinding, gezelligheid en goed eten.",
       p3: 'Wij brengen moderne, strakke keukenapparaten naar jouw huis. Daarom maken we eigentijdse keukenapparaten voor alle soorten keukens, in elke uithoek van de wereld.',
       p4: 'We helpen je het beste uit je keuken te halen, met innovatieve en moderne aanrechtapparaten. We volgen zorgvuldige principes van ontwerp en functionaliteit, zodat je een goed gevoel hebt bij wat je gebruikt om eten te bereiden.',
-      p5: 'Welke keuken je ook hebt, wij hebben een apparaat dat zich er thuis voelt. Met Stir & Spoon zeg je hallo tegen iets nieuws.'
+      p5: 'Welke keuken je ook hebt, wij hebben een apparaat dat zich er thuis voelt. Met Stir and Spoon zeg je hallo tegen iets nieuws.'
     },
     mood: {
       eyebrow: 'Sfeerimpressie',
       title: 'Sfeer in de keuken',
       subtitle:
-        'Helder wit marmer, kleurrijk vers fruit, noten en handen die met plezier aan het werk zijn — een blik in de wereld van Stir & Spoon.',
+        'Helder wit marmer, kleurrijk vers fruit, noten en handen die met plezier aan het werk zijn — een blik in de wereld van Stir and Spoon.',
       placeholderHint: 'Plaats foto in'
     },
     range: {
       eyebrow: 'Collectie',
       title: 'Ons assortiment',
       subtitle: 'Moderne aanrechtapparaten met een zacht, tijdloos design.',
-      product1Name: 'Stir & Spoon Keukenapparaat 01',
+      product1Name: 'Stir and Spoon Keukenapparaat 01',
       product1Text: 'Compact, krachtig en stil op elk aanrecht.',
-      product2Name: 'Stir & Spoon Keukenapparaat 02',
+      product2Name: 'Stir and Spoon Keukenapparaat 02',
       product2Text: 'Ontworpen voor dagelijks gemak en verse ingrediënten.',
-      product3Name: 'Stir & Spoon Keukenapparaat 03',
+      product3Name: 'Stir and Spoon Keukenapparaat 03',
       product3Text: 'Strakke vormgeving die past in elke moderne keuken.',
       cta: 'Shop op Bol.com'
     },
     cta: {
-      eyebrow: 'Stir & Spoon® op Bol.com',
+      eyebrow: 'Stir and Spoon® op Bol.com',
       title: 'Klaar voor iets nieuws?',
       slogan: 'Zeg hallo tegen iets nieuws!',
       button: 'Shop op Bol.com'
@@ -87,17 +87,17 @@ const translations = {
       tagline: 'Moderne, strakke keukenapparaten voor alle soorten keukens.',
       contactTitle: 'Contact & Service',
       contactPlaceholder: 'Vragen of contact? Stuur ons een bericht:',
-      socialTitle: 'Volg Stir & Spoon®',
-      copyright: '© 2026 Stir & Spoon®. Alle rechten voorbehouden.',
-      trademark: 'Stir & Spoon® is een geregistreerd handelsmerk.'
+      socialTitle: 'Volg Stir and Spoon®',
+      copyright: '© 2026 Stir and Spoon®. Alle rechten voorbehouden.',
+      trademark: 'Stir and Spoon® is een geregistreerd handelsmerk.'
     }
   },
 
   en: {
     meta: {
-      title: 'Stir & Spoon® | Say Hello to something new!',
+      title: 'Stir and Spoon® | Say Hello to something new!',
       description:
-        'Stir & Spoon® — Modern, sleek small kitchen appliances for all kinds of kitchens. Say Hello to something new! Available on Bol.com.'
+        'Stir and Spoon® — Modern, sleek small kitchen appliances for all kinds of kitchens. Say Hello to something new! Available on Bol.com.'
     },
     nav: {
       manifesto: 'Our story',
@@ -116,38 +116,38 @@ const translations = {
       visualTag: 'For every kitchen',
       visualCaption: 'Fresh, sleek design for your countertop',
       heroPhotoAlt:
-        'Bright white marble kitchen with colorful fresh fruit, nuts, and sleek Stir & Spoon appliances'
+        'Bright white marble kitchen with colorful fresh fruit, nuts, and sleek Stir and Spoon appliances'
     },
     manifesto: {
       eyebrow: 'Our Manifesto',
       title: 'Our world is in kitchens',
-      p1: 'At Stir & Spoon, our world is in kitchens. These are the places that we know best.',
+      p1: 'At Stir and Spoon, our world is in kitchens. These are the places that we know best.',
       p2: 'Big kitchens, small kitchens. Apartment-sized kitchens. Kitchens with plants in the windows or colorful fruit art on the walls. Kitchens with children with their eyes on a pastry, grandparents cooking up stamppot, and everyone in between. Kitchens are a hub of activity. They’re a place for laughter, connection, good times, and good food.',
       p3: "We're here to bring modern, sleek, kitchen appliances to your home. It's why we make contemporary kitchen appliances for all kinds of kitchens, in every corner of the world.",
       p4: "We'll help you make the most of your kitchen, with innovative and modern countertop appliances. We follow careful principles of design and functionality, so that you can feel good about what you're using to prepare food.",
-      p5: "No matter what kind of kitchen you're in, we've got an appliance that can feel right at home. With Stir & Spoon, say hello to something new."
+      p5: "No matter what kind of kitchen you're in, we've got an appliance that can feel right at home. With Stir and Spoon, say hello to something new."
     },
     mood: {
       eyebrow: 'Mood Impression',
       title: 'Kitchen moods',
       subtitle:
-        'Fresh white marble kitchens, vibrant fruit and nuts, and hands at work — a glimpse into the bright, welcoming world of Stir & Spoon.',
+        'Fresh white marble kitchens, vibrant fruit and nuts, and hands at work — a glimpse into the bright, welcoming world of Stir and Spoon.',
       placeholderHint: 'Add photo at'
     },
     range: {
       eyebrow: 'Collection',
       title: 'Our range',
       subtitle: 'Modern countertop appliances with a soft, timeless look.',
-      product1Name: 'Stir & Spoon Appliance 01',
+      product1Name: 'Stir and Spoon Appliance 01',
       product1Text: 'Compact, powerful, and quiet on any countertop.',
-      product2Name: 'Stir & Spoon Appliance 02',
+      product2Name: 'Stir and Spoon Appliance 02',
       product2Text: 'Designed for everyday ease and fresh ingredients.',
-      product3Name: 'Stir & Spoon Appliance 03',
+      product3Name: 'Stir and Spoon Appliance 03',
       product3Text: 'Sleek form that feels right at home in any kitchen.',
       cta: 'Shop on Bol.com'
     },
     cta: {
-      eyebrow: 'Stir & Spoon® on Bol.com',
+      eyebrow: 'Stir and Spoon® on Bol.com',
       title: 'Ready for something new?',
       slogan: 'Say Hello to something new!',
       button: 'Shop on Bol.com'
@@ -156,9 +156,9 @@ const translations = {
       tagline: 'Modern, sleek small kitchen appliances for all kinds of kitchens.',
       contactTitle: 'Contact & Support',
       contactPlaceholder: 'Questions or inquiries? Reach out to us:',
-      socialTitle: 'Follow Stir & Spoon®',
-      copyright: '© 2026 Stir & Spoon®. All rights reserved.',
-      trademark: 'Stir & Spoon® is a registered trademark.'
+      socialTitle: 'Follow Stir and Spoon®',
+      copyright: '© 2026 Stir and Spoon®. All rights reserved.',
+      trademark: 'Stir and Spoon® is a registered trademark.'
     }
   }
 };
@@ -202,8 +202,8 @@ const moodPhotos = [
     src: 'assets/photos/foto-3.jpg',
     aspect: 'standard',
     alt: {
-      nl: 'Modern, strak Stir & Spoon aanrechtapparaat in een zonnige keuken met planten',
-      en: 'Modern, sleek Stir & Spoon countertop appliance in a sunny kitchen with plants'
+      nl: 'Modern, strak Stir and Spoon aanrechtapparaat in een zonnige keuken met planten',
+      en: 'Modern, sleek Stir and Spoon countertop appliance in a sunny kitchen with plants'
     },
     caption: {
       nl: 'Strak op elk aanrecht',
@@ -250,4 +250,3 @@ const moodPhotos = [
     }
   }
 ];
-

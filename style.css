@@ -52,10 +52,10 @@
   --fs-xl: clamp(1.85rem, 3.5vw, 2.65rem);
   --fs-hero: clamp(2.25rem, 5vw, 3.6rem);
 
-  /* Logo Sizing (Official Stir & Spoon® Logo) */
-  --logo-height-header: 42px;
-  --logo-height-hero: 76px;
-  --logo-height-footer: 40px;
+  /* Logo Sizing (Official Horizontal Stir and Spoon® Logo) */
+  --logo-height-header: 34px;
+  --logo-height-hero: 58px;
+  --logo-height-footer: 32px;
 
   /* Spacing Scale */
   --space-xs: 0.5rem;
@@ -722,7 +722,9 @@ h4 {
 }
 
 .hero-photo-frame {
-  aspect-ratio: 4 / 3.4;
+  aspect-ratio: 1 / 1;
+  max-width: 500px;
+  margin: 0 auto;
   border-radius: var(--radius-xl);
   border-width: 8px;
 }

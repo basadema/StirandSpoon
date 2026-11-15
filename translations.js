@@ -26,9 +26,9 @@ const SITE_CONFIG = {
 const translations = {
   nl: {
     meta: {
-      title: 'Stir and Spoon® | Zeg hallo tegen iets nieuws!',
+      title: 'Stir and Spoon® | Say hello to something new!',
       description:
-        'Stir and Spoon® — Moderne, strakke keukenapparaten voor alle soorten keukens. Zeg hallo tegen iets nieuws! Ontdek ons assortiment op Bol.com.'
+        'Stir and Spoon® — Essentials voor keuken & huis. Say hello to something new! Ontdek ons assortiment op Bol.com.'
     },
     nav: {
       manifesto: 'Ons verhaal',
@@ -39,15 +39,15 @@ const translations = {
       langSwitchLabel: 'Kies taal'
     },
     hero: {
-      badge: 'Moderne keukenapparaten',
-      slogan: 'Zeg hallo tegen iets nieuws!',
+      badge: 'ESSENTIALS VOOR KEUKEN & HUIS',
+      slogan: 'Say hello to something new!',
       supporting:
         'Eigentijdse, strakke aanrechtapparaten ontworpen voor elke keuken. Van snelle doordeweekse ontbijtjes tot lange avonden aan tafel.',
       cta: 'Shop op Bol.com',
       visualTag: 'Voor elke keuken',
       visualCaption: 'Fris design voor op elk aanrecht',
       heroPhotoAlt:
-        'Lichte marmeren keuken met kleurrijk vers fruit, noten en moderne Stir and Spoon keukenapparatuur'
+        'Stir and Spoon essentials voor keuken en huis: messenblok, keukenschaar, 4-in-1 messenslijper en koffiecapsulehouders'
     },
     manifesto: {
       eyebrow: 'Ons Manifesto',
@@ -80,7 +80,7 @@ const translations = {
     cta: {
       eyebrow: 'Stir and Spoon® op Bol.com',
       title: 'Klaar voor iets nieuws?',
-      slogan: 'Zeg hallo tegen iets nieuws!',
+      slogan: 'Say hello to something new!',
       button: 'Shop op Bol.com'
     },
     footer: {
@@ -95,9 +95,9 @@ const translations = {
 
   en: {
     meta: {
-      title: 'Stir and Spoon® | Say Hello to something new!',
+      title: 'Stir and Spoon® | Say hello to something new!',
       description:
-        'Stir and Spoon® — Modern, sleek small kitchen appliances for all kinds of kitchens. Say Hello to something new! Available on Bol.com.'
+        'Stir and Spoon® — Essentials for kitchen & home. Say hello to something new! Available on Bol.com.'
     },
     nav: {
       manifesto: 'Our story',
@@ -108,15 +108,15 @@ const translations = {
       langSwitchLabel: 'Select language'
     },
     hero: {
-      badge: 'Modern kitchen appliances',
-      slogan: 'Say Hello to something new!',
+      badge: 'ESSENTIALS FOR KITCHEN & HOME',
+      slogan: 'Say hello to something new!',
       supporting:
         'Contemporary, sleek countertop appliances crafted to feel right at home in every kitchen — from lively family mornings to cozy dinners.',
       cta: 'Shop on Bol.com',
       visualTag: 'For every kitchen',
       visualCaption: 'Fresh, sleek design for your countertop',
       heroPhotoAlt:
-        'Bright white marble kitchen with colorful fresh fruit, nuts, and sleek Stir and Spoon appliances'
+        'Stir and Spoon essentials for kitchen and home: knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers'
     },
     manifesto: {
       eyebrow: 'Our Manifesto',
@@ -149,7 +149,7 @@ const translations = {
     cta: {
       eyebrow: 'Stir and Spoon® on Bol.com',
       title: 'Ready for something new?',
-      slogan: 'Say Hello to something new!',
+      slogan: 'Say hello to something new!',
       button: 'Shop on Bol.com'
     },
     footer: {

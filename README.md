@@ -1,14 +1,9 @@
-# STIR & SPOON® — Merk-landingspagina
+# Stir and Spoon — Officiële Merkpagina
 
-Officiële merk-landingspagina voor **STIR & SPOON®** (opgericht door Bas Adema) — Nederlands keukengereimerk gespecialiseerd in ergonomisch keukengerei van geborsteld RVS.
+Minimalistische en luxe merk-landingspagina ("Coming Soon / Officiële Merkpagina") voor **Stir and Spoon** — duurzaam, ergonomisch keukengerei voor jarenlang kookplezier.
 
-## Collectie
-- **STIR & SPOON® Combibundel** (4-in-1 Handmatige Messenslijper + Multifunctionele Keukenschaar)
-- **STIR & SPOON® 4-in-1 Handmatige Messenslijper** (Sleuf 1: Keramiek voor scharen, Sleuf 2: Carbon grof, Sleuf 3: Zirkonia diamant fijn, Sleuf 4: Keramiek polijsten)
-- **STIR & SPOON® Multifunctionele Keukenschaar** (Geborsteld RVS met visontschubber, flesopener & notenkraker)
-
-## Structuur
-- `index.html` — Landingspagina (Navigatie, Hero, Collectie, 4-in-1 Slijpsysteem, Digitale Handleiding, Merkbelofte & Over Ons, Footer)
-- `styles.css` — Scandinavisch-minimalistische huisstijl (`#FFFFFF`, `#F6F7F8`, `#111111`, `#8E949A`, `#C68B59`)
-- `app.js` — Interactieve 4-in-1 slijpwijzer & navigatie
-- `assets/` — Studio-productfotografie en officiële PDF-handleiding (`STIR-AND-SPOON-Handleiding.pdf`)
+## Opbouw & Stijl
+- **Header**: Minimalistische header met het Stir and Spoon logo en lepel-spiraal icoon.
+- **Hero-sectie**: Centrale "Binnenkort Online" aankondiging met directe verwijzing naar de winkel op Bol.com.
+- **Footer**: Strakke footer met bedrijfsnaam, klantenservice & garantie (`service@stirandspoon.nl`) en copyright.
+- **Kleurenpalet**: Helder wit (`#FFFFFF`), zacht lichtgrijs (`#F6F7F8`), diep matzwart (`#111111`) en geborsteld RVS-grijs (`#8E949A`).

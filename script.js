@@ -162,19 +162,21 @@
       // Ignore storage errors in private mode
     }
 
-    // 2. Update Document Title & Meta Description / Open Graph
-    const metaTitle = getTranslation(validLang, 'meta.title');
-    const metaDesc = getTranslation(validLang, 'meta.description');
-    if (metaTitle) {
-      document.title = metaTitle;
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      if (ogTitle) ogTitle.setAttribute('content', metaTitle);
-    }
-    if (metaDesc) {
-      const descEl = document.querySelector('meta[name="description"]');
-      if (descEl) descEl.setAttribute('content', metaDesc);
-      const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (ogDesc) ogDesc.setAttribute('content', metaDesc);
+    // 2. Update Document Title & Meta Description / Open Graph on the home page
+    if (document.getElementById('hero')) {
+      const metaTitle = getTranslation(validLang, 'meta.title');
+      const metaDesc = getTranslation(validLang, 'meta.description');
+      if (metaTitle) {
+        document.title = metaTitle;
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', metaTitle);
+      }
+      if (metaDesc) {
+        const descEl = document.querySelector('meta[name="description"]');
+        if (descEl) descEl.setAttribute('content', metaDesc);
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.setAttribute('content', metaDesc);
+      }
     }
 
     // 3. Swap all [data-i18n] text nodes
@@ -284,31 +286,50 @@
   }
 
   /**
+   * Collaborate Form Submission Handler (No backend required: shows confirmation + mailto)
+   */
+  function initCollaborateForm() {
+    const form = document.getElementById('collab-form');
+    const successBanner = document.getElementById('collab-success');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = (document.getElementById('collab-name')?.value || '').trim();
+      const email = (document.getElementById('collab-email')?.value || '').trim();
+      const type = (document.getElementById('collab-type')?.value || 'Collaboration').trim();
+      const social = (document.getElementById('collab-social')?.value || 'N/A').trim();
+      const message = (document.getElementById('collab-message')?.value || '').trim();
+
+      const recipient =
+        (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.contactEmail) || 'hello@stirandspoon.com';
+      const subject = encodeURIComponent(`[Stir and Spoon Inquiry] ${type} — ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nInquiry Type: ${type}\nSocial / Website: ${social}\n\nMessage:\n${message}`
+      );
+
+      if (successBanner) {
+        successBanner.classList.add('is-visible');
+        successBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+      form.reset();
+    });
+  }
+
+  /**
    * Initialize Page
    */
   document.addEventListener('DOMContentLoaded', () => {
     applySiteConfig();
     initLogoFallbacks();
     initNavigation();
+    initCollaborateForm();
 
-    // Determine initial language (localStorage -> default 'nl')
-    let savedLang = DEFAULT_LANG;
-    try {
-      savedLang = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
-    } catch (e) {
-      savedLang = DEFAULT_LANG;
-    }
-
-    applyLanguage(savedLang);
+    applyLanguage(DEFAULT_LANG);
     initScrollReveal();
-
-    // Language switch button listeners
-    document.querySelectorAll('[data-lang-btn]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const chosen = btn.getAttribute('data-lang-btn');
-        applyLanguage(chosen);
-      });
-    });
   });
 })();
 

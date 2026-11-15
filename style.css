@@ -1086,3 +1086,265 @@ h4 {
   }
 }
 
+/* ----------------------------------------------------------------------------
+   5.8 Header & Footer Navigation Links (Home / Collaborate)
+   ---------------------------------------------------------------------------- */
+.header-nav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-text-dark);
+  background-color: var(--color-pastel-blue-light);
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.header-pill-link:hover,
+.header-pill-link.is-active {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(222, 45, 139, 0.25);
+}
+
+.footer-links-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  .footer-links-stack {
+    align-items: flex-start;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+   5.9 Collaborate Page (collaborate.html)
+   ---------------------------------------------------------------------------- */
+.collab-hero-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.collab-hero-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.collab-hero-title {
+  font-size: var(--fs-hero);
+  color: var(--color-pink);
+  margin-bottom: var(--space-md);
+  line-height: 1.14;
+}
+
+.collab-hero-subtitle {
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  max-width: 660px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Two Partner Cards Side-by-Side */
+.collab-cards-section {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-xl);
+}
+
+.collab-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .collab-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.25rem;
+  }
+}
+
+.collab-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  border-radius: var(--radius-xl);
+  border: 5px solid var(--color-white);
+}
+
+.collab-card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-pastel-blue-light);
+  color: var(--color-pink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.collab-card-title {
+  font-size: var(--fs-lg);
+  color: var(--color-pink);
+}
+
+.collab-card-text {
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+/* Collaborate Inquiry Form */
+.collab-form-section {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-2xl);
+}
+
+.collab-form-card {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+}
+
+.collab-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  margin-top: var(--space-md);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+}
+
+@media (min-width: 640px) {
+  .form-row-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.form-label {
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: 0.03em;
+  padding-left: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  color: var(--color-text-dark);
+  background-color: var(--color-pastel-blue-lighter);
+  border: 2px solid var(--color-pastel-blue);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.25rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.75;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  background-color: var(--color-white);
+  border-color: var(--color-pink);
+  box-shadow: 0 0 0 4px var(--color-pink-glow);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2.5px solid var(--color-pink);
+  border-bottom: 2.5px solid var(--color-pink);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+  border-radius: var(--radius-lg);
+}
+
+.form-submit-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.form-success-message {
+  display: none;
+  margin-top: 1.5rem;
+  background-color: var(--color-pastel-blue-light);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--color-text-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-success-message.is-visible {
+  display: block;
+}
+
+.form-success-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--color-pink);
+  margin-bottom: 0.35rem;
+}
+
+.form-success-text {
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+
+

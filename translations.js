@@ -26,34 +26,36 @@ const translations = {
     meta: {
       title: 'Stir and Spoon® | Say hello to something new!',
       description:
-        'Stir and Spoon® — Essentials for kitchen & home. Say hello to something new! Available on Bol.com.'
+        'Stir and Spoon® — Smart essentials for kitchen & home. Say hello to something new! Available on Bol.com.'
     },
     nav: {
+      home: 'Home',
       manifesto: 'Our story',
       mood: 'Kitchen moods',
       range: 'Our range',
+      collaborate: 'Collaborate',
       cta: 'Shop on Bol.com',
       menuToggleLabel: 'Toggle navigation menu'
     },
     hero: {
-      badge: 'ESSENTIALS FOR KITCHEN & HOME',
+      badge: 'SMART ESSENTIALS FOR KITCHEN & HOME',
       slogan: 'Say hello to something new!',
       supporting:
-        'Contemporary, sleek countertop appliances crafted to feel right at home in every kitchen — from lively family mornings to cozy dinners.',
+        'Thoughtfully designed, contemporary tools and essentials crafted to feel right at home in every kitchen and living space.',
       cta: 'Shop on Bol.com',
-      visualTag: 'For every kitchen',
-      visualCaption: 'Fresh, sleek design for your countertop',
+      visualTag: 'For kitchen & home',
+      visualCaption: 'Smart, sleek design for everyday living',
       heroPhotoAlt:
-        'Stir and Spoon essentials for kitchen and home: knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers'
+        'Stir and Spoon smart essentials for kitchen and home: knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers'
     },
     manifesto: {
       eyebrow: 'Our Manifesto',
-      title: 'Our world is in kitchens',
-      p1: 'At Stir and Spoon, our world is in kitchens. These are the places that we know best.',
-      p2: 'Big kitchens, small kitchens. Apartment-sized kitchens. Kitchens with plants in the windows or colorful fruit art on the walls. Kitchens with children with their eyes on a pastry, grandparents cooking up stamppot, and everyone in between. Kitchens are a hub of activity. They’re a place for laughter, connection, good times, and good food.',
-      p3: "We're here to bring modern, sleek, kitchen appliances to your home. It's why we make contemporary kitchen appliances for all kinds of kitchens, in every corner of the world.",
-      p4: "We'll help you make the most of your kitchen, with innovative and modern countertop appliances. We follow careful principles of design and functionality, so that you can feel good about what you're using to prepare food.",
-      p5: "No matter what kind of kitchen you're in, we've got an appliance that can feel right at home. With Stir and Spoon, say hello to something new."
+      title: 'Our world begins in the kitchen',
+      p1: 'At Stir and Spoon, our world begins in the kitchen — and extends throughout the home. These are the places we know best.',
+      p2: 'Big kitchens, small kitchens. Apartment-sized kitchens. Kitchens with plants on the windowsill or colorful art on the walls. Kitchens with kids eyeing fresh pastries, grandparents cooking up a classic meal, and everyone in between. Kitchens are a hub of activity — a place for laughter, connection, good times, and good food.',
+      p3: 'We’re here to bring modern, practical essentials to your kitchen and home. That’s why we create contemporary tools and accessories for all kinds of spaces, in every corner of the world.',
+      p4: 'We help you make the most of your daily routine with thoughtful design and everyday functionality — from smart kitchen tools to cozy home essentials like oven mitts — so you can feel good about what you reach for every day.',
+      p5: 'No matter what kind of home you’re in, we’ve got something that feels right at home. With Stir and Spoon, say hello to something new.'
     },
     mood: {
       eyebrow: 'Mood Impression',
@@ -65,12 +67,12 @@ const translations = {
     range: {
       eyebrow: 'Collection',
       title: 'Our range',
-      subtitle: 'Modern countertop appliances with a soft, timeless look.',
-      product1Name: 'Stir and Spoon Appliance 01',
-      product1Text: 'Compact, powerful, and quiet on any countertop.',
-      product2Name: 'Stir and Spoon Appliance 02',
+      subtitle: 'Smart essentials for kitchen and home with a soft, timeless look.',
+      product1Name: 'Stir and Spoon Essential 01',
+      product1Text: 'Compact, practical, and sleek on any countertop.',
+      product2Name: 'Stir and Spoon Essential 02',
       product2Text: 'Designed for everyday ease and fresh ingredients.',
-      product3Name: 'Stir and Spoon Appliance 03',
+      product3Name: 'Stir and Spoon Essential 03',
       product3Text: 'Sleek form that feels right at home in any kitchen.',
       cta: 'Shop on Bol.com'
     },
@@ -80,10 +82,43 @@ const translations = {
       slogan: 'Say hello to something new!',
       button: 'Shop on Bol.com'
     },
+    collaborate: {
+      eyebrow: 'Partnerships & Collaborations',
+      title: 'Let’s create something great together.',
+      subtitle:
+        'Whether you’re a content creator who loves cooking and home styling, or a retail partner looking to stock Stir and Spoon essentials — we’d love to hear from you.',
+      card1Title: 'Creators & Influencers',
+      card1Text:
+        'Love sharing kitchen hacks, recipes, or cozy home finds? Tell us about your channel and audience for gifting or paid collaborations.',
+      card2Title: 'Retail & Business Partners',
+      card2Text:
+        'Interested in wholesale, distribution, or B2B partnerships? Reach out to explore carrying Stir and Spoon in your store.',
+      formEyebrow: 'Get in touch',
+      formTitle: 'Send us an inquiry',
+      formSubtitle:
+        'Fill out the details below and our team will get back to you shortly.',
+      labelName: 'Name',
+      placeholderName: 'Your full name',
+      labelEmail: 'Email address',
+      placeholderEmail: 'you@example.com',
+      labelType: 'Type of inquiry',
+      optionCreator: 'Creator / Influencer',
+      optionRetail: 'Retail / Wholesale',
+      optionPress: 'Press / Other',
+      labelSocial: 'Social handle or Website URL',
+      placeholderSocial: '@yourhandle or https://yourwebsite.com',
+      labelMessage: 'Message',
+      placeholderMessage: 'Tell us a little about yourself, your audience or store, and how you’d like to collaborate...',
+      submitBtn: 'Send Inquiry',
+      successTitle: 'Thank you for reaching out!',
+      successText:
+        'Your inquiry has been prepared for our team. Your email client will open with your message ready to send to hello@stirandspoon.com.'
+    },
     footer: {
-      tagline: 'Modern, sleek small kitchen appliances for all kinds of kitchens.',
-      contactTitle: 'Contact & Support',
-      contactPlaceholder: 'Questions or inquiries? Reach out to us:',
+      tagline: 'Smart, sleek essentials for every kitchen and home.',
+      contactTitle: 'Contact & Collaborate',
+      contactPlaceholder: 'Questions or partnership inquiries?',
+      collaborateLink: 'Collaborate with us',
       socialTitle: 'Follow Stir and Spoon®',
       copyright: '© 2026 Stir and Spoon®. All rights reserved.',
       trademark: 'Stir and Spoon® is a registered trademark.'

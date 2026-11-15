@@ -8,7 +8,7 @@
   <title>Stir and Spoon® | Say hello to something new!</title>
   <meta
     name="description"
-    content="Stir and Spoon® — Essentials for kitchen &amp; home. Say hello to something new! Available on Bol.com."
+    content="Stir and Spoon® — Smart essentials for kitchen &amp; home. Say hello to something new! Available on Bol.com."
   />
 
   <!-- Open Graph / Social Sharing Tags -->
@@ -17,9 +17,9 @@
   <meta property="og:title" content="Stir and Spoon® | Say hello to something new!" />
   <meta
     property="og:description"
-    content="Essentials for kitchen &amp; home. Say hello to something new!"
+    content="Smart essentials for kitchen &amp; home. Say hello to something new!"
   />
-  <meta property="og:image" content="assets/photos/foto-1.jpg" />
+  <meta property="og:image" content="assets/photos/hero-foto.jpg" />
 
   <!-- Favicon & App Icons -->
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png" />
@@ -41,14 +41,11 @@
 
   <!-- ========================================================================
        1. HEADER COMPONENT (Shared across all pages)
-       - Place your logo file at: /assets/logo.svg
-       - To enable the top navigation menu later, add class `has-nav` to <header>
        ======================================================================== -->
   <header class="site-header" id="top">
     <div class="header-bar">
       <!-- Brand Logo (Left) -->
       <a href="index.html" class="brand-logo" aria-label="Stir and Spoon® Home">
-        <!-- OFFICIAL LOGO: /assets/logo.svg (and /assets/logo.png) -->
         <img
           src="assets/logo.svg"
           alt="Stir and Spoon®"
@@ -60,15 +57,25 @@
         </span>
       </a>
 
-      <!-- Hidden-for-now Navigation (Ready to grow: add `.has-nav` to `.site-header`) -->
+      <!-- Hidden-for-now Anchor Navigation -->
       <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
         <a href="#manifesto" class="nav-link" data-i18n="nav.manifesto">Our story</a>
         <a href="#sfeer" class="nav-link" data-i18n="nav.mood">Kitchen moods</a>
-        <a href="#assortiment" class="nav-link" data-i18n="nav.range">Our range</a>
+        <a href="collaborate.html" class="nav-link" data-i18n="nav.collaborate">Collaborate</a>
       </nav>
 
-      <!-- Optional Mobile Burger (Hidden until `.has-nav` is added on `.site-header`) -->
+      <!-- Header Right Actions: Collaborate Link -->
       <div class="header-actions">
+        <div class="header-nav-links">
+          <a href="collaborate.html" class="header-pill-link">
+            <span data-i18n="nav.collaborate">Collaborate</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+
         <button
           type="button"
           class="nav-burger"
@@ -89,11 +96,8 @@
   <main>
     <!-- ======================================================================
          2. HERO SECTION COMPONENT
-         - Large logo, slogan, supporting copy & Bol.com pill button
-         - Hero photo uses /assets/photos/foto-1.jpg
          ====================================================================== -->
     <section class="section hero-section" id="hero">
-      <!-- Soft organic pastel blue background blobs -->
       <div class="blob blob-light hero-blob-1" aria-hidden="true"></div>
       <div class="blob blob-deep hero-blob-2" aria-hidden="true"></div>
 
@@ -102,12 +106,11 @@
         <div class="hero-content reveal">
           <div class="hero-badge">
             <span class="hero-badge-dot" aria-hidden="true"></span>
-            <span data-i18n="hero.badge">ESSENTIALS FOR KITCHEN &amp; HOME</span>
+            <span data-i18n="hero.badge">SMART ESSENTIALS FOR KITCHEN &amp; HOME</span>
           </div>
 
           <div class="hero-logo-wrap">
             <div class="brand-logo brand-logo--hero">
-              <!-- HERO LOGO: /assets/logo-hero.svg (horizontal pink version) -->
               <img
                 src="assets/logo-hero.svg"
                 alt="Stir and Spoon®"
@@ -125,10 +128,9 @@
           </h1>
 
           <p class="hero-supporting" data-i18n="hero.supporting">
-            Contemporary, sleek countertop appliances crafted to feel right at home in every kitchen — from lively family mornings to cozy dinners.
+            Thoughtfully designed, contemporary tools and essentials crafted to feel right at home in every kitchen and living space.
           </p>
 
-          <!-- BOL.COM CTA LINK: Edit `SITE_CONFIG.bolUrl` in translations.js -->
           <a
             href="https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/"
             target="_blank"
@@ -147,17 +149,16 @@
         <!-- Hero Rounded Photo Visual -->
         <div class="hero-visual reveal">
           <figure class="photo-frame hero-photo-frame">
-            <!-- HERO PHOTO: /assets/photos/hero-foto.jpg -->
             <img
               id="hero-photo-img"
               src="assets/photos/hero-foto.jpg"
-              alt="Stir and Spoon essentials for kitchen and home: knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers"
+              alt="Stir and Spoon smart essentials for kitchen and home: knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers"
               data-i18n-alt="hero.heroPhotoAlt"
             />
           </figure>
           <div class="hero-floating-pill">
             <span class="hero-floating-pill-dot" aria-hidden="true"></span>
-            <span data-i18n="hero.visualCaption">Fresh, sleek design for your countertop</span>
+            <span data-i18n="hero.visualCaption">Smart, sleek design for everyday living</span>
           </div>
         </div>
       </div>
@@ -176,7 +177,6 @@
 
     <!-- ======================================================================
          3. MANIFESTO SECTION COMPONENT
-         - Elegant white rounded card (.card) on pastel blue backdrop
          ====================================================================== -->
     <section class="section manifesto-section" id="manifesto">
       <div class="blob blob-white manifesto-blob" aria-hidden="true"></div>
@@ -184,23 +184,23 @@
       <div class="container">
         <article class="card manifesto-card reveal">
           <span class="section-eyebrow" data-i18n="manifesto.eyebrow">Our Manifesto</span>
-          <h2 class="section-title" data-i18n="manifesto.title">Our world is in kitchens</h2>
+          <h2 class="section-title" data-i18n="manifesto.title">Our world begins in the kitchen</h2>
 
           <div class="manifesto-body">
             <p class="manifesto-lead" data-i18n="manifesto.p1">
-              At Stir and Spoon, our world is in kitchens. These are the places that we know best.
+              At Stir and Spoon, our world begins in the kitchen — and extends throughout the home. These are the places we know best.
             </p>
             <p data-i18n="manifesto.p2">
-              Big kitchens, small kitchens. Apartment-sized kitchens. Kitchens with plants in the windows or colorful fruit art on the walls. Kitchens with children with their eyes on a pastry, grandparents cooking up stamppot, and everyone in between. Kitchens are a hub of activity. They’re a place for laughter, connection, good times, and good food.
+              Big kitchens, small kitchens. Apartment-sized kitchens. Kitchens with plants on the windowsill or colorful art on the walls. Kitchens with kids eyeing fresh pastries, grandparents cooking up a classic meal, and everyone in between. Kitchens are a hub of activity — a place for laughter, connection, good times, and good food.
             </p>
             <p data-i18n="manifesto.p3">
-              We're here to bring modern, sleek, kitchen appliances to your home. It's why we make contemporary kitchen appliances for all kinds of kitchens, in every corner of the world.
+              We’re here to bring modern, practical essentials to your kitchen and home. That’s why we create contemporary tools and accessories for all kinds of spaces, in every corner of the world.
             </p>
             <p data-i18n="manifesto.p4">
-              We'll help you make the most of your kitchen, with innovative and modern countertop appliances. We follow careful principles of design and functionality, so that you can feel good about what you're using to prepare food.
+              We help you make the most of your daily routine with thoughtful design and everyday functionality — from smart kitchen tools to cozy home essentials like oven mitts — so you can feel good about what you reach for every day.
             </p>
             <p class="manifesto-closing" data-i18n="manifesto.p5">
-              No matter what kind of kitchen you're in, we've got an appliance that can feel right at home. With Stir and Spoon, say hello to something new.
+              No matter what kind of home you’re in, we’ve got something that feels right at home. With Stir and Spoon, say hello to something new.
             </p>
           </div>
 
@@ -211,8 +211,6 @@
 
     <!-- ======================================================================
          4. MOOD IMPRESSION SECTION COMPONENT
-         - Data-driven photo grid rendered from `moodPhotos` in translations.js
-         - Place photos at: /assets/photos/foto-1.jpg through /assets/photos/foto-6.jpg
          ====================================================================== -->
     <section class="section mood-section" id="sfeer">
       <div class="container">
@@ -224,67 +222,12 @@
           </p>
         </div>
 
-        <!-- Populated automatically by script.js using `moodPhotos` in translations.js -->
         <div class="mood-grid" id="mood-grid" aria-live="polite"></div>
       </div>
     </section>
 
     <!-- ======================================================================
-         5. FUTURE SECTION TEMPLATE: OUR RANGE (Commented out)
-         - Uncomment this <section> block when you are ready to showcase
-           individual kitchen appliances on the page.
-         ====================================================================== -->
-    <!--
-    <section class="section range-section" id="assortiment">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="range.eyebrow">Collection</span>
-          <h2 class="section-title" data-i18n="range.title">Our range</h2>
-          <p class="section-subtitle" data-i18n="range.subtitle">
-            Modern countertop appliances with a soft, timeless look.
-          </p>
-        </div>
-
-        <div class="range-grid">
-          <article class="card card-interactive product-card reveal">
-            <div class="photo-frame">
-              <img src="assets/photos/product-1.jpg" alt="Stir and Spoon Product 1" loading="lazy" />
-            </div>
-            <h3 class="product-card-title" data-i18n="range.product1Name">Stir and Spoon Appliance 01</h3>
-            <p class="product-card-text" data-i18n="range.product1Text">Compact, powerful, and quiet on any countertop.</p>
-            <a href="https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
-              <span data-i18n="range.cta">Shop on Bol.com</span>
-            </a>
-          </article>
-
-          <article class="card card-interactive product-card reveal">
-            <div class="photo-frame">
-              <img src="assets/photos/product-2.jpg" alt="Stir and Spoon Product 2" loading="lazy" />
-            </div>
-            <h3 class="product-card-title" data-i18n="range.product2Name">Stir and Spoon Appliance 02</h3>
-            <p class="product-card-text" data-i18n="range.product2Text">Designed for everyday ease and fresh ingredients.</p>
-            <a href="https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
-              <span data-i18n="range.cta">Shop on Bol.com</span>
-            </a>
-          </article>
-
-          <article class="card card-interactive product-card reveal">
-            <div class="photo-frame">
-              <img src="assets/photos/product-3.jpg" alt="Stir and Spoon Product 3" loading="lazy" />
-            </div>
-            <h3 class="product-card-title" data-i18n="range.product3Name">Stir and Spoon Appliance 03</h3>
-            <p class="product-card-text" data-i18n="range.product3Text">Sleek form that feels right at home in any kitchen.</p>
-            <a href="https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bol-link>
-              <span data-i18n="range.cta">Shop on Bol.com</span>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- ======================================================================
-         6. CALL-TO-ACTION (CTA) BAND SECTION COMPONENT
+         5. CALL-TO-ACTION (CTA) BAND SECTION COMPONENT
          ====================================================================== -->
     <section class="section cta-section" id="cta">
       <div class="container">
@@ -293,7 +236,6 @@
           <h2 class="cta-title" data-i18n="cta.title">Ready for something new?</h2>
           <p class="cta-slogan font-heading" data-i18n="cta.slogan">Say hello to something new!</p>
 
-          <!-- BOL.COM CTA LINK: Edit `SITE_CONFIG.bolUrl` in translations.js -->
           <a
             href="https://www.bol.com/nl/nl/w/alle-artikelen-stir-and-spoon/1664178/"
             target="_blank"
@@ -313,8 +255,7 @@
   </main>
 
   <!-- ========================================================================
-       7. FOOTER COMPONENT (Shared across all pages)
-       - Edit contact details & social URLs in `SITE_CONFIG` inside translations.js
+       6. FOOTER COMPONENT (Shared across all pages)
        ======================================================================== -->
   <footer class="site-footer">
     <div class="footer-card">
@@ -322,7 +263,6 @@
         <!-- Column 1: Logo & Tagline -->
         <div class="footer-brand-col">
           <a href="#top" class="brand-logo brand-logo--footer" aria-label="Stir and Spoon®">
-            <!-- OFFICIAL LOGO: /assets/logo.svg (and /assets/logo.png) -->
             <img
               src="assets/logo.svg"
               alt="Stir and Spoon®"
@@ -334,31 +274,39 @@
             </span>
           </a>
           <p class="footer-tagline" data-i18n="footer.tagline">
-            Modern, sleek small kitchen appliances for all kinds of kitchens.
+            Smart, sleek essentials for every kitchen and home.
           </p>
         </div>
 
-        <!-- Column 2: Contact Placeholder -->
+        <!-- Column 2: Contact & Collaborate -->
         <div>
-          <h3 class="footer-heading" data-i18n="footer.contactTitle">Contact &amp; Support</h3>
+          <h3 class="footer-heading" data-i18n="footer.contactTitle">Contact &amp; Collaborate</h3>
           <p class="footer-contact-text" data-i18n="footer.contactPlaceholder">
-            Questions or inquiries? Reach out to us:
+            Questions or partnership inquiries?
           </p>
-          <!-- CONTACT PLACEHOLDER: Edit `SITE_CONFIG.contactEmail` in translations.js -->
-          <a href="mailto:hello@stirandspoon.com" class="footer-email-pill" id="footer-email-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="2" y="4" width="20" height="16" rx="5" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <span id="footer-email-text">hello@stirandspoon.com</span>
-          </a>
+          <div class="footer-links-stack">
+            <a href="collaborate.html" class="footer-email-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M19 8v6M22 11h-6" />
+              </svg>
+              <span data-i18n="nav.collaborate">Collaborate</span>
+            </a>
+            <a href="mailto:hello@stirandspoon.com" class="footer-email-pill" id="footer-email-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="5" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <span id="footer-email-text">hello@stirandspoon.com</span>
+            </a>
+          </div>
         </div>
 
         <!-- Column 3: Social Media Icons (Instagram, Pinterest, Facebook) -->
         <div>
           <h3 class="footer-heading" data-i18n="footer.socialTitle">Follow Stir and Spoon®</h3>
           <div class="social-list">
-            <!-- Instagram -->
             <a
               href="#"
               class="social-link"
@@ -372,7 +320,6 @@
               </svg>
             </a>
 
-            <!-- Pinterest -->
             <a
               href="#"
               class="social-link"
@@ -386,7 +333,6 @@
               </svg>
             </a>
 
-            <!-- Facebook -->
             <a
               href="#"
               class="social-link"

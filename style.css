@@ -998,7 +998,8 @@ h4 {
 .footer-tagline {
   font-size: var(--fs-sm);
   color: var(--color-text);
-  max-width: 320px;
+  max-width: 380px;
+  line-height: 1.7;
 }
 
 .footer-heading {

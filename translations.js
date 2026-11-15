@@ -115,7 +115,8 @@ const translations = {
         'Your inquiry has been prepared for our team. Your email client will open with your message ready to send to hello@stirandspoon.com.'
     },
     footer: {
-      tagline: 'Smart, sleek essentials for every kitchen and home.',
+      tagline:
+        'We pour our hearts into making products that fit the modern kitchen, with well-crafted kitchenware that elevates your space. Be proud of your kitchen, no matter what kind you’re in.',
       contactTitle: 'Contact & Collaborate',
       contactPlaceholder: 'Questions or partnership inquiries?',
       collaborateLink: 'Collaborate with us',

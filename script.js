@@ -145,7 +145,7 @@
       existingPlaceholder.remove();
       heroImg.style.display = '';
     }
-    bindPhotoFallback(heroImg, caption, 'assets/photos/foto-1.jpg', lang);
+    bindPhotoFallback(heroImg, caption, 'assets/photos/hero-foto.jpg', lang);
   }
 
   /**

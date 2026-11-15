@@ -59,7 +59,7 @@ const translations = {
       eyebrow: 'Mood Impression',
       title: 'Kitchen moods',
       subtitle:
-        'Fresh white marble kitchens, vibrant fruit and nuts, and hands at work — a glimpse into the bright, welcoming world of Stir and Spoon.',
+        'From razor-sharp knives and multipurpose kitchen shears to neatly organized coffee corners — discover Stir and Spoon in everyday action.',
       placeholderHint: 'Add photo at'
     },
     range: {
@@ -102,12 +102,12 @@ const moodPhotos = [
   {
     id: 'foto-1',
     src: 'assets/photos/foto-1.jpg',
-    aspect: 'tall',
+    aspect: 'standard',
     alt: {
-      en: 'Stir and Spoon essentials for kitchen and home on a bright kitchen shelf'
+      en: 'Stir and Spoon Capsule Holder for Nespresso packaging box with espresso machine and glass cups'
     },
     caption: {
-      en: 'Essentials for kitchen & home'
+      en: 'Capsule Holder for Nespresso'
     }
   },
   {
@@ -115,10 +115,10 @@ const moodPhotos = [
     src: 'assets/photos/foto-2.jpg',
     aspect: 'standard',
     alt: {
-      en: 'Hands preparing fresh ingredients and nuts in a bright kitchen'
+      en: 'Wooden knife block, kitchen scissors, 4-in-1 knife sharpener, and coffee capsule organizers on a kitchen shelf'
     },
     caption: {
-      en: 'Hands at work'
+      en: 'Kitchen & Coffee Essentials'
     }
   },
   {
@@ -126,21 +126,21 @@ const moodPhotos = [
     src: 'assets/photos/foto-3.jpg',
     aspect: 'standard',
     alt: {
-      en: 'Modern, sleek Stir and Spoon countertop appliance in a sunny kitchen with plants'
+      en: 'Hands sharpening a kitchen knife with the Stir and Spoon 4-in-1 sharpener on white marble next to fresh vine tomatoes'
     },
     caption: {
-      en: 'Sleek on every countertop'
+      en: '4-in-1 Knife & Scissors Sharpener'
     }
   },
   {
     id: 'foto-4',
     src: 'assets/photos/foto-4.jpg',
-    aspect: 'wide',
+    aspect: 'standard',
     alt: {
-      en: 'Colorful bowl with fresh summer fruit, berries, and crunchy nuts'
+      en: 'Sleek black rotating coffee capsule carousel filled with colorful pods on a bright kitchen table'
     },
     caption: {
-      en: 'Rich in color & flavor'
+      en: 'Rotating Coffee Capsule Carousel'
     }
   },
   {
@@ -148,10 +148,10 @@ const moodPhotos = [
     src: 'assets/photos/foto-5.jpg',
     aspect: 'standard',
     alt: {
-      en: 'Lively kitchen hub with freshly prepared treats on the table'
+      en: 'Hands opening a chilled drink bottle using the built-in bottle opener of the Stir and Spoon kitchen scissors'
     },
     caption: {
-      en: 'The heart of the home'
+      en: 'Multifunctional Kitchen Scissors'
     }
   },
   {
@@ -159,10 +159,10 @@ const moodPhotos = [
     src: 'assets/photos/foto-6.jpg',
     aspect: 'standard',
     alt: {
-      en: 'Minimalist kitchen details with soft curves and fresh tones'
+      en: 'Top view of the matte-black pull-out coffee capsule drawer neatly organized with colorful coffee pods'
     },
     caption: {
-      en: 'Thoughtful in every detail'
+      en: 'Coffee Capsule Organizer Drawer'
     }
   }
 ];

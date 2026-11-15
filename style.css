@@ -52,10 +52,10 @@
   --fs-xl: clamp(1.85rem, 3.5vw, 2.65rem);
   --fs-hero: clamp(2.25rem, 5vw, 3.6rem);
 
-  /* Logo Sizing (Official Horizontal Stir and Spoon® Logo) */
-  --logo-height-header: 34px;
+  /* Logo Sizing (Standard stacked logo in header/footer, horizontal pink logo in hero) */
+  --logo-height-header: 42px;
   --logo-height-hero: 58px;
-  --logo-height-footer: 32px;
+  --logo-height-footer: 40px;
 
   /* Spacing Scale */
   --space-xs: 0.5rem;

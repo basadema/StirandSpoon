@@ -16,7 +16,7 @@
   'use strict';
 
   const STORAGE_KEY = 'stir_and_spoon_lang';
-  const DEFAULT_LANG = 'nl';
+  const DEFAULT_LANG = 'en';
 
   /**
    * Resolve nested key like "manifesto.p1" from the active language dictionary
@@ -110,8 +110,8 @@
     grid.innerHTML = '';
 
     moodPhotos.forEach((photo) => {
-      const altText = (photo.alt && photo.alt[lang]) || photo.alt.nl || 'Stir and Spoon';
-      const captionText = (photo.caption && photo.caption[lang]) || photo.caption.nl || '';
+      const altText = (photo.alt && photo.alt[lang]) || photo.alt.en || 'Stir and Spoon';
+      const captionText = (photo.caption && photo.caption[lang]) || photo.caption.en || '';
 
       const figure = document.createElement('figure');
       figure.className = 'photo-frame mood-item reveal is-visible';

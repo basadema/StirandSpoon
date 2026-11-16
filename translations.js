@@ -15,7 +15,7 @@ const SITE_CONFIG = {
   contactEmail: 'hello@stirandspoon.com',
   contactLocation: 'The Netherlands',
   socials: {
-    instagram: '#',
+    instagram: 'https://www.instagram.com/StirSpoon/',
     pinterest: '#',
     facebook: '#'
   }
